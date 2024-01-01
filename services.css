@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+/* Styling the Nav bar */
+header {
+    background-color: #295378;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+}
+#logoline {
+    display: flex;
+    align-items: center;
+}
+#logoline img {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    border-radius: 170px;
+}
+nav {
+    display: flex;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.2s;
+    font-size: 24px; 
+}
+nav a:hover {
+    color: #ccc;
+}
+/* Additional styling for the active navigation link */
+nav a.active {
+    color: #ccc;
+}
+/* Styling the services page */
+.serviceName {
+    background-color: #1c3851;
+    text-align: center;
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px;
+    border-radius: 5px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(247, 247, 247);
+}
+.service > p {
+    text-align: center;
+    padding: 2%;
+}
+.product-image {
+    align-self: center;
+    margin-right: 15px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+/* For the Calendar */
+#calendar-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#calendar {
+    width: 60%;
+    margin: left;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/* Style for the container */
+.calender-timeslot-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+/* Style for the calendar */
+.calendar {
+    width: 60%;
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem;
+}
+.day {
+    text-align: center;
+    padding: 5px;
+    width: 14.28%;
+}
+.calendar-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.date {
+    text-align: center;
+    padding: 5px;
+    width: 14.28%;
+    height: 80px;
+}
+.date:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+.date-today {
+    background-color: #d8e8f8;
+}
+.month-header {
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+}
+.weekdays-row {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+.date-disabled {
+    color: #888;
+    cursor: not-allowed;
+}
+/* To make the book now look like a link */
+summary {
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
+.date-selected {
+    background-color: #ddd; /* Change this color to the desired selected date color */
+    color: #fff;
+}
+/* Style for the time slots */
+#timeSlots {
+    width: 30%;
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+/* Time Slots Styling */
+#timeslots-container {
+    width: 30%; 
+    margin: auto;
+}
+.time-slots-table {
+    margin: auto;
+    border-collapse: collapse;
+}
+.time-slot {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+/* Styles for the schedule button */
+.schedule-button,
+.scheduled-button {
+    background-color: #295378;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 4px 8px;
+}
+.schedule-button:hover {
+    background-color: #1c3851;
+}
+/* Styles for the scheduled state */
+.scheduled-button {
+    background-color: black;
+    cursor: not-allowed;
+}
+/* Styles for the already-booked state */
+.schedule-button.already-booked {
+    background-color: black;
+    color: #ffffff;
+    cursor: not-allowed;
+}
+/* Additional styles for the hover effect on the scheduled button */
+.scheduled-button:hover {
+    background-color: black; 
+    cursor: not-allowed; 
+}
+/* Pop up Form */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.popup-container-show {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.popup-content {
+    text-align: center;
+}
+.popup-content label {
+    display: block;
+    margin-bottom: 10px;
+}
+.popup-content input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+.popup-content button {
+    background-color: #295378;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:4px;
+}
+.popup-content button:hover {
+    background-color: #1c3851;
+}
+/* Style the footer */
+footer {
+    background-color: #1c3851;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.about-section, .hours {
+    margin-bottom: 20px;
+}
+.about-section h2, .hours h2 {
+    font-size: 20px;
+}
+.copyright {
+    font-size: 14px;
+}
+/* Drop Down for Services*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
